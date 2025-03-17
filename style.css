@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: cyan;
+}
+
+.banner {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url('images/banner.jpg') no-repeat center/cover;
+}
+
+.content h1 {
+    font-size: 3em;
+    text-shadow: 0 0 20px cyan;
+}
+
+.highlight {
+    color: cyan;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border: 2px solid cyan;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: cyan;
+    color: black;
+}
+
+.about, .services, .contact {
+    padding: 100px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+/* === Sidebar Styles === */
+.sidebar {
+    position: fixed;
+    left: 0;
+    height: 25vh;
+    width: auto;
+    top: 225%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: cyan;
+    transform: scale(1.1);
+}
+/* Sidebar Open/Close Toggle JavaScript code should be moved to a separate .js file */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
